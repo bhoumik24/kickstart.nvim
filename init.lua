@@ -672,7 +672,7 @@ cmp.setup {
 vim.cmd([[
 augroup RestoreCursorShapeOnExit
     autocmd!
-    autocmd VimLeave * set guicursor=a:ver20-blinkwait175-blinkoff150-blinkon175
+    autocmd VimLeave * set guicursor=a:ver20
 augroup END
 ]])
 
