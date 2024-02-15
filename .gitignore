@@ -3,3 +3,4 @@ test.sh
 .luarc.json
 nvim
 lua/custom/plugins/copilot.lua
+lazy-lock.json

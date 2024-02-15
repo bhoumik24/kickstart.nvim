@@ -32,7 +32,7 @@ return {
         desc = "Open harpoon window"
       },
       {
-        "<leader>a",
+        "<leader>i",
         function()
           require('harpoon'):list():append()
         end
