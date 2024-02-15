@@ -38,9 +38,45 @@ return {
         end
       },
       {
-        "<C-h>",
+        "<leader>1",
         function()
           require('harpoon'):list():select(1)
+        end
+      },
+      {
+        "<leader>2",
+        function()
+          require('harpoon'):list():select(2)
+        end
+      },
+      {
+        "<leader>3",
+        function()
+          require('harpoon'):list():select(3)
+        end
+      },
+      {
+        "<leader>4",
+        function()
+          require('harpoon'):list():select(4)
+        end
+      },
+      {
+        "<leader>5",
+        function()
+          require('harpoon'):list():select(5)
+        end
+      },
+      {
+        "<C-S-P>",
+        function()
+          require('harpoon'):list():prev()
+        end
+      },
+      {
+        "<C-S-N>",
+        function()
+          require('harpoon'):list():next()
         end
       },
     }
