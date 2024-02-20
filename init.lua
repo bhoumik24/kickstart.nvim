@@ -256,6 +256,9 @@ require('lazy').setup({
   },
   {
     'ThePrimeagen/vim-be-good' },
+  {
+    'nvim-tree/nvim-web-devicons'
+  },
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
   --       These are some example plugins that I've included in the kickstart repository.
