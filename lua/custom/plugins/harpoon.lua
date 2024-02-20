@@ -71,13 +71,15 @@ return {
         "<C-S-P>",
         function()
           require('harpoon'):list():prev()
-        end
+        end,
+        desc = "Next file in Harpoon"
       },
       {
         "<C-S-N>",
         function()
           require('harpoon'):list():next()
-        end
+        end,
+        desc = "Previous file in Harpoon"
       },
     }
   }
