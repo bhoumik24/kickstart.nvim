@@ -4,3 +4,4 @@ test.sh
 nvim
 lua/custom/plugins/copilot.lua
 lazy-lock.json
+.zed/

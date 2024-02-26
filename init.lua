@@ -202,14 +202,20 @@ require('lazy').setup({
   {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
     -- See `:help lualine.txt`
     opts = {
       options = {
-        icons_enabled = false,
+        icons_enabled = true,
         theme = 'auto',
         component_separators = '|',
         section_separators = '',
       },
+      sections = {
+        lualine_a = {
+          'buffers',
+        }
+      }
     },
   },
 
@@ -258,6 +264,9 @@ require('lazy').setup({
     'ThePrimeagen/vim-be-good' },
   {
     'nvim-tree/nvim-web-devicons'
+  },
+  {
+    "MunifTanjim/nui.nvim",
   },
 
   -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
@@ -672,12 +681,14 @@ cmp.setup {
   },
 }
 
+--[==[
 vim.cmd([[
 augroup RestoreCursorShapeOnExit
     autocmd!
     autocmd VimLeave * set guicursor=a:ver20
 augroup END
 ]])
+--]==]
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
