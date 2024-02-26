@@ -10,9 +10,9 @@ vim.keymap.set("n", "<C-/>", function()
 		style = "minimal",
 		margin = {
 			top = -25,
-			left = 30,
+			left = 35,
 			right = -100,
-			bottom = 25
+			bottom = 35
 		}
 	})
 end, { desc = "Term with border" })
