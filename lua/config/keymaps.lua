@@ -4,15 +4,15 @@ vim.keymap.set("n", "<C-/>", function()
 	Util.terminal(nil, {
 		border = "rounded",
 		size = {
-			width = 100,
-			height = 20
+			width = 50,
+			height = 30
 		},
 		style = "minimal",
 		margin = {
-			top = -9,
-			left = 32,
-			right = -32,
-			bottom = 9
+			top = -25,
+			left = 30,
+			right = -100,
+			bottom = 25
 		}
 	})
 end, { desc = "Term with border" })
